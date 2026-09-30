@@ -1,9 +1,13 @@
-import JewelryCalculator from '../../../components/JewelryCalculator';
+import DiamondHero from '@/components/leilao-diamante/DiamondHero';
+import AuctionCountdown from '@/components/leilao-diamante/AuctionCountdown';
+import HowToParticipate from '@/components/leilao-diamante/HowToParticipate';
 
-export default function CalculadoraDeJoiasPage() {
+export default function LeilaoDiamantePage() {
   return (
-    <main className="min-h-screen bg-[#F7F3EF]">
-      <JewelryCalculator />
+    <main>
+      <DiamondHero />
+      <AuctionCountdown />
+      <HowToParticipate />
     </main>
   );
 }
