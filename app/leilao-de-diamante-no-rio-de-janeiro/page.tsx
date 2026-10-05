@@ -1,3 +1,4 @@
+
 import DiamondHero from '@/components/leilao-diamante/DiamondHero';
 import AuctionCountdown from '@/components/leilao-diamante/AuctionCountdown';
 import HowToParticipate from '@/components/leilao-diamante/HowToParticipate';
@@ -16,8 +17,8 @@ export default function LeilaoDiamantePage() {
       <HowToParticipate />
       <DiamondDetails />
       <MadihaAssistance />
-      <AuctionLocation />
       <InstagramSection />
+      <AuctionLocation />
       <AuctionFAQ />
       <AuctionFinalCTA />
     </main>

@@ -180,7 +180,7 @@ export default function AuctionFinalCTA() {
             "
           >
             <a
-              href="https://wa.me/5521993530012?text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20para%20participar%20do%20leil%C3%A3o%20do%20Diamante%20Natural%20de%208%2C06%20ct%20da%20Madiha%20Maison."
+              href="https://api.whatsapp.com/send?phone=552199353-0012&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20do%20leil%C3%A3o%2064350%0ahttp://www.bastosleiloes.com.br/catalogo.asp?Num%3d64350"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -207,7 +207,7 @@ export default function AuctionFinalCTA() {
             </a>
 
             <a
-              href="#localizacao"
+              href="https://api.whatsapp.com/send?phone=552199353-0012&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20do%20leil%C3%A3o%2064350%0ahttp://www.bastosleiloes.com.br/catalogo.asp?Num%3d64350"
               className="
                 inline-flex
                 min-h-[56px]

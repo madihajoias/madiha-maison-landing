@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -6,7 +7,7 @@ const faqs = [
   {
     question: 'Como participar do leilão do Diamante Natural de 8,06 ct?',
     answer:
-      'Interessados podem falar diretamente com a equipe da Madiha Maison para receber informações sobre o diamante, o evento e orientação sobre o processo de participação no leilão.',
+      'Para participar, o interessado deverá realizar seu cadastro na plataforma Bastos Leilões e seguir o procedimento de habilitação solicitado pela plataforma.\n\nPara informações sobre o diamante, o evento ou orientações sobre o processo de participação, a equipe da Madiha Maison está à disposição para auxiliar.',
   },
   {
     question: 'Quando será realizado o leilão?',
@@ -265,6 +266,7 @@ export default function AuctionFAQ() {
                     <p
                       className="
                         max-w-[760px]
+                        whitespace-pre-line
                         pb-8
                         pr-12
                         text-[13px]

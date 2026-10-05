@@ -1,3 +1,4 @@
+
 export default function HowToParticipate() {
   return (
     <section
@@ -90,14 +91,13 @@ export default function HowToParticipate() {
               "
             >
               Interessados no Diamante Natural de 8,06 ct podem
-              entrar em contato diretamente com a Madiha Maison
-              para receber informações sobre a joia e orientação
-              sobre o processo de participação no leilão.
+              entrar em contato diretamente com a Madiha Maison para receber
+              informações sobre a joia e orientações sobre o processo de participação no leilão.
             </p>
           </div>
         </div>
 
-        {/* ETAPAS */}
+        {/* ETAPAS — 4 CAIXAS */}
         <div
           className="
             mt-14
@@ -105,7 +105,8 @@ export default function HowToParticipate() {
             border
             border-[#5A1017]/12
             bg-white/30
-            md:grid-cols-3
+            md:grid-cols-2
+            xl:grid-cols-4
           "
         >
           <StepCard
@@ -116,14 +117,20 @@ export default function HowToParticipate() {
 
           <StepCard
             number="02"
-            title="Receba as informações"
-            text="Nossa equipe apresenta os dados disponíveis sobre a joia, o evento e orienta você sobre o processo de participação."
+            title="Cadastre-se na Bastos Leilões"
+            text="Para participar do leilão e realizar lances, é necessário fazer seu cadastro na plataforma da Bastos Leilões e seguir o procedimento de habilitação solicitado pela plataforma."
           />
 
           <StepCard
             number="03"
-            title="Participe do leilão"
-            text="Após as orientações, você poderá seguir para o cadastro e participação na plataforma responsável pelo leilão."
+            title="Acesse o leilão"
+            text="Após a liberação do cadastro, acesse a página oficial do leilão para acompanhar os lotes e participar."
+          />
+
+          <StepCard
+            number="04"
+            title="Realize seu lance"
+            text="No dia 7 de outubro, acompanhe o leilão ao vivo pela plataforma e realize seus lances conforme as condições estabelecidas."
           />
         </div>
 
@@ -194,29 +201,31 @@ export default function HowToParticipate() {
             "
           >
             <a
-              href="#contato"
-              className="
-                inline-flex
-                min-h-[54px]
-                items-center
-                justify-center
-                border
-                border-[#5A1017]
-                bg-[#5A1017]
-                px-8
-                text-[10px]
-                font-semibold
-                uppercase
-                tracking-[0.22em]
-                text-[#F7F3EF]
-                transition-all
-                duration-300
-                hover:border-[#761722]
-                hover:bg-[#761722]
-              "
-            >
-              Quero participar
-            </a>
+  href="https://wa.me/5521993530012?text=Quero%20receber%20orienta%C3%A7%C3%A3o%20para%20participar%20do%20leil%C3%A3o"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    inline-flex
+    min-h-[54px]
+    items-center
+    justify-center
+    border
+    border-[#5A1017]
+    bg-[#5A1017]
+    px-8
+    text-[10px]
+    font-semibold
+    uppercase
+    tracking-[0.22em]
+    text-[#F7F3EF]
+    transition-all
+    duration-300
+    hover:border-[#761722]
+    hover:bg-[#761722]
+  "
+>
+  Quero participar
+</a>
 
             <a
               href="#diamante"
@@ -267,10 +276,14 @@ function StepCard({
         border-[#5A1017]/12
         p-8
         last:border-b-0
-        md:border-b-0
         md:border-r
-        md:last:border-r-0
-        lg:p-10
+        md:even:border-r-0
+        md:[&:nth-child(3)]:border-b-0
+        xl:border-b-0
+        xl:even:border-r
+        xl:last:border-r-0
+        lg:p-8
+        2xl:p-10
       "
     >
       <span
@@ -288,11 +301,12 @@ function StepCard({
         className="
           mt-8
           font-serif
-          text-[1.75rem]
+          text-[1.65rem]
           font-normal
           leading-tight
           text-[#4F1720]
-          md:text-[2rem]
+          md:text-[1.8rem]
+          2xl:text-[2rem]
         "
       >
         {title}

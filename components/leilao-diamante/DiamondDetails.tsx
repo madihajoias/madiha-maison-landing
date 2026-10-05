@@ -58,7 +58,7 @@ export default function DiamondDetails() {
             "
           >
             <Image
-              src="/diamante-detalhe-806ct-madiha.webp"
+              src="/diamante-detalhe-806ct-madiha-v2.webp"
               alt="Diamante natural de 8,06 ct da Madiha Maison"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 55vw, 620px"
