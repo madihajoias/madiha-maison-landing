@@ -1,6 +1,6 @@
 export default function AuctionLocation() {
   const address =
-    'Av. das Américas, 8585 - sala 490 - Barra da Tijuca, Rio de Janeiro - RJ, 22793-081';
+    'Madiha Maison, Av. das Américas, 8585, Sala 490, Vogue Square, Barra da Tijuca, Rio de Janeiro - RJ, 22793-081';
 
   const encodedAddress = encodeURIComponent(address);
 
@@ -8,7 +8,10 @@ export default function AuctionLocation() {
     `https://www.google.com/maps?q=${encodedAddress}&output=embed`;
 
   const directionsUrl =
-    `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    'https://www.google.com/maps/place/Madiha+Maison/@-23.0020122,-43.398695,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdbf2521f3707:0xa54921f2f3d36fd8!8m2!3d-23.0020172!4d-43.3961147!16s%2Fg%2F11zz3zxm21';
+
+  const auctionUrl =
+    'https://www.bastosleiloes.com.br/leilao.asp?Num=64350';
 
   return (
     <section
@@ -303,7 +306,9 @@ export default function AuctionLocation() {
               </a>
 
               <a
-                href="#contato"
+                href={auctionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
                   inline-flex
                   min-h-[54px]
