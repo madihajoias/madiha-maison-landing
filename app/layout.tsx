@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header"; // 1. Importamos a caixa do nosso Menu!
+import Header from "../components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,18 +13,51 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 2. Injetamos o SEO VIP da Madiha Maison
 export const metadata: Metadata = {
-  title: "Madiha Maison | Leilão de Joias e Compra de Ouro no RJ",
-  description: "Avaliação discreta e segura de joias e ouro. Atendimento exclusivo no Vogue Square, Barra da Tijuca. Participe dos nossos leilões de alta joalheria.",
-  metadataBase: new URL('https://www.leilaodejoiaseouro.com.br'),
+  metadataBase: new URL("https://madihamaison.com.br"),
+
+  title: {
+    default:
+      "Leilão de Diamante Natural 8,06 ct no Rio de Janeiro | Madiha Maison",
+    template: "%s | Madiha Maison",
+  },
+
+  description:
+    "Conheça o Diamante Natural de 8,06 ct da Madiha Maison, com lapidação esmeralda, e saiba como participar do leilão no Rio de Janeiro.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   openGraph: {
-    title: 'Madiha Maison | Leilão de Joias e Compra de Ouro',
-    description: 'Transforme suas joias e ouro em capital com discrição e segurança.',
-    url: 'https://www.leilaodejoiaseouro.com.br',
-    siteName: 'Madiha Maison',
-    locale: 'pt_BR',
-    type: 'website',
+    type: "website",
+    locale: "pt_BR",
+    url: "https://madihamaison.com.br/",
+    siteName: "Madiha Maison",
+    title:
+      "Leilão de Diamante Natural 8,06 ct no Rio de Janeiro | Madiha Maison",
+    description:
+      "Conheça o Diamante Natural de 8,06 ct da Madiha Maison e saiba como participar do leilão no Rio de Janeiro.",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Leilão de Diamante Natural 8,06 ct no Rio de Janeiro | Madiha Maison",
+    description:
+      "Conheça o Diamante Natural de 8,06 ct da Madiha Maison e saiba como participar do leilão.",
   },
 };
 
@@ -35,14 +68,11 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR" // 3. Ajustado para o Brasil
+      lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* 4. Encaixamos o menu no topo do corpo do site */}
-        <Header/> 
-        
-        {/* O conteúdo do resto do site aparece aqui embaixo */}
+        <Header />
         {children}
       </body>
     </html>
