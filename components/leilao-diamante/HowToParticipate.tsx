@@ -201,7 +201,7 @@ export default function HowToParticipate() {
             "
           >
             <a
-  href="https://wa.me/5521993530012?text=Quero%20receber%20orienta%C3%A7%C3%A3o%20para%20participar%20do%20leil%C3%A3o"
+  href="https://www.bastosleiloes.com.br/leilao.asp?Num=64350"
   target="_blank"
   rel="noopener noreferrer"
   className="

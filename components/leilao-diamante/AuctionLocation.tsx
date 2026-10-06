@@ -1,17 +1,12 @@
 export default function AuctionLocation() {
-  const address =
-    'Madiha Maison, Av. das Américas, 8585, Sala 490, Vogue Square, Barra da Tijuca, Rio de Janeiro - RJ, 22793-081';
-
-  const encodedAddress = encodeURIComponent(address);
-
   const mapUrl =
-    `https://www.google.com/maps?q=${encodedAddress}&output=embed`;
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5923754482!2d-43.39869498874111!3d-23.00201224119506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdbf2521f3707%3A0xa54921f2f3d36fd8!2sMadiha%20Maison!5e0!3m2!1spt-BR!2sbr!4v1791309377339!5m2!1spt-BR!2sbr";
 
   const directionsUrl =
-    'https://www.google.com/maps/place/Madiha+Maison/@-23.0020122,-43.398695,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdbf2521f3707:0xa54921f2f3d36fd8!8m2!3d-23.0020172!4d-43.3961147!16s%2Fg%2F11zz3zxm21';
+    "https://www.google.com/maps/place/Madiha+Maison/@-23.0020122,-43.398695,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdbf2521f3707:0xa54921f2f3d36fd8!8m2!3d-23.0020172!4d-43.3961147!16s%2Fg%2F11zz3zxm21?entry=ttu";
 
   const auctionUrl =
-    'https://www.bastosleiloes.com.br/leilao.asp?Num=64350';
+    "https://www.bastosleiloes.com.br/leilao.asp?Num=64350";
 
   return (
     <section
@@ -134,9 +129,9 @@ export default function AuctionLocation() {
           >
             <iframe
               src={mapUrl}
-              title="Localização da Madiha Maison no Vogue Square"
+              title="Madiha Maison no Vogue Square"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="
                 absolute

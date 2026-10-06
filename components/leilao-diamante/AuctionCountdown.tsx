@@ -328,7 +328,7 @@ export default function AuctionCountdown() {
               "
             >
               <a
-                href="#participar"
+                href="https://www.bastosleiloes.com.br/leilao.asp?Num=64350"
                 className="
                   inline-flex
                   min-h-[54px]

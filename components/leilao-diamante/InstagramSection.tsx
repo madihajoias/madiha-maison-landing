@@ -125,7 +125,7 @@ export default function InstagramSection() {
             </a>
 
             <a
-              href="#contato"
+              href="https://www.bastosleiloes.com.br/leilao.asp?Num=64350"
               className="
                 inline-flex
                 min-h-[54px]

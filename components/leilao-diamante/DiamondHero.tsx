@@ -207,7 +207,7 @@ export default function DiamondHero() {
             "
           >
             <a
-              href="https://api.whatsapp.com/send?phone=552199353-0012&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20do%20leil%C3%A3o%2064350%0ahttp://www.bastosleiloes.com.br/catalogo.asp?Num%3d64350"
+              href="https://www.bastosleiloes.com.br/leilao.asp?Num=64350"
               target="_blank"
               rel="noopener noreferrer"
               className="

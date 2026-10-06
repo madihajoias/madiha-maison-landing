@@ -120,7 +120,7 @@ export default function MadihaAssistance() {
               "
             >
               <a
-                href="#contato"
+                href="https://www.bastosleiloes.com.br/leilao.asp?Num=64350"
                 className="
                   inline-flex
                   min-h-[54px]
@@ -145,7 +145,7 @@ export default function MadihaAssistance() {
               </a>
 
               <a
-                href="#localizacao"
+                href="google.com/maps/place/Madiha+Maison/@-23.0020172,-43.3961147,17z/data=!4m6!3m5!1s0x9bdbf2521f3707:0xa54921f2f3d36fd8!8m2!3d-23.0020172!4d-43.3961147!16s%2Fg%2F11zz3zxm21?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                 className="
                   inline-flex
                   min-h-[54px]
